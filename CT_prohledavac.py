@@ -9,8 +9,8 @@ url = "https://www.ceskatelevize.cz/services-old/programme/xml/schedule.php"
 
 @click.command()
 @click.argument("name")
-@click.option("--date")
-@click.option("--channel", multiple=True)
+@click.option("--date", help="Write the date in dd.mm.yyyy format.")
+@click.option("--channel", multiple=True, help="Write the channel(s) for the searching (ct1, ct2, ct4, ct24, ct5, ct6)")
 def find_show(name, date, channel):
     all_channels = ['ct1', 'ct2', 'ct24', 'ct4', 'ct5', 'ct6']
     if date:
