@@ -17,6 +17,8 @@ All requests to the program must be authenticated using your username (registrat
 https://www.ceskatelevize.cz/xml/tv-program/registrace/).
 
 ## How to use it and examples
+* Register here: https://www.ceskatelevize.cz/xml/tv-program/registrace/.
+* Create login.txt file and save there your username.
 * Use CT_prohledavac.py to run the program
 * Use the command:
 
