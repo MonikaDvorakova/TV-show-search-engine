@@ -34,7 +34,6 @@ def download_TVlisting_xml(date, channels, url):
     login = get_login()
     xml_roots = {}
     for channel in channels:
-        channel = channel  # Tento radek tu nemusi byt?
         parameters = {'user': login, 'date': date, 'channel': channel}
         response = requests.get(url, params=parameters)
         response.encoding = 'utf-8'
