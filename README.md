@@ -1,4 +1,4 @@
-# SearchTheShow
+# The TV-show-search-engine
 
 The program is the command-line application and it uses Click library to set the commands.
 
