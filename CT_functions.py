@@ -37,7 +37,7 @@ def download_TVlisting_xml(date, channels, url):
         parameters = {'user': login, 'date': date, 'channel': channel}
         response = requests.get(url, params=parameters)
         response.encoding = 'utf-8'
-        root = et.fromstring(response.text)
+        root = et.fromstring(response.content)
         xml_roots[channel] = root
     return xml_roots
 
